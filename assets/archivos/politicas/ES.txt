@@ -1,0 +1,36 @@
+<table class="table table-bordered table-sm">
+	<tbody>
+		<tr>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:12.0pt">Periodo de Anticipaci&oacute;n para la Cancelaci&oacute;n</span></strong></span></span></p>
+			</td>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:12.0pt">Penalidades</span></strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:12.0pt">Hasta 6&nbsp;d&iacute;as antes del viaje</span></strong></span></span></p>
+			</td>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Penalidad del 15% por gastos administrativos, de personal, impresi&oacute;n de ordenes de servicios y otros relacionados a la contrataci&oacute;n de los servicios requeridos</span></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:12.0pt">Entre los 5&nbsp;a 3 d&iacute;as antes del viaje</span></strong></span></span></p>
+			</td>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Penalidad del 50% Se le cobrar&aacute; la mitad del monto total del servicio contratado</span></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:12.0pt">2 d&iacute;as antes o el mismo d&iacute;a del viaje</span></strong></span></span></p>
+			</td>
+			<td style="vertical-align:top">
+			<p style="margin-left:0cm; margin-right:0cm"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt">Penalidad del 100% Se le cobrar&aacute; el total del monto acordado del servicio.</span></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>

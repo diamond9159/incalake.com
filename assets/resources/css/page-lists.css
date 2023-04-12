@@ -1,0 +1,185 @@
+
+.div-full{
+padding: 0;
+margin: 0;
+width: 100%;
+}
+.div-content{
+padding: 0.5rem;
+}
+.div-txt-servicio>div {
+background: var(--color-primary);
+color: #fff;
+padding: 5px;
+font-weight: bold;
+font-size: 15px;
+width: 100%;
+}
+#carusel-main {
+padding: 0;
+}
+
+/*div cabecera de actividades*/
+.div-options-search{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.div-content-options-search{
+    background: #fff;
+    height: 100%;
+    display: block;
+        border: solid 1px #ddd;
+    border-radius: 3px
+}
+.div-content-options-search .div-content-result-txt{
+    display: flex;
+    height: 100%;
+}
+/*DIV ACTIVIDAD*/
+.div-activity{
+    margin: 0 auto 0.5rem auto;
+}
+.content-activity{
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+margin:0;
+background: #fff;
+height: 100%;
+}
+.div-img-activity {
+    /*background: #000;*/
+padding: 0;
+align-self: center;
+}
+.div-list-squeare .div-img-activity{
+    align-self: baseline;
+}
+.img-activity {
+width: 100%;
+}
+/*CONTENT DESCRIPTION PRICE*/
+.content-descripcion-prince {
+margin: 0;
+width: 100%;
+}
+/*PRECIOS ACTIVIDAD*/
+.div-price {
+color: #f5f5f5;
+height: 100%;
+}
+.content-price {
+background: var(--color-primary);
+height: 100%;
+padding: 10px 5px 10px 5px;
+/*position: absolute;*/
+}
+#actividades_content .div-card-category,#actividades_content .div-card-duration,#actividades_content .div-card-horarios{
+    text-transform: capitalize;
+    color: #888888;
+}
+#actividades_content .div-card-category .tag-category{
+    border: solid 1px #d9d9d9;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+/*DIV div-square*/
+.div-list-squeare .div-img-activity,
+.div-list-squeare .div-descripcion-prince,
+.div-list-squeare .div-description,
+.div-list-squeare .div-price{
+        max-width: 100%;
+    flex: 0 0 100%;
+}
+.div-list-squeare .div-card-duration,.div-list-squeare .div-card-horarios,.div-list-squeare .div-card-category{
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+    
+}
+
+#actividades_content .div-description-txt{
+    text-align: justify;
+}
+.div-list-squeare .div-price{
+        display: inline-block !important;
+}
+.div-list-squeare .div-card-title{
+
+    text-align: left;
+    padding: 0;
+    
+}
+.div-list-squeare .div-card-title a{
+    line-height: 1.1;
+    font-size: 1rem;
+}
+
+@media (max-width: 767px){
+    .div-price{
+        height: auto !important;
+    }
+}
+/*card filtro*/
+.div-card-filter{
+    margin-top: 5px;
+}
+.div-card-filter .card-category,
+.div-card-filter .card-duration,
+.div-card-filter .card-locations{
+border-bottom: 2px solid rgb(0, 123, 255);
+}
+.div-card-filter .badge {
+background: #777;
+/*border-radius: 50%;*/
+}
+.card {
+width: 100%;
+margin-bottom: 0.8rem;
+}
+.list-group-item {
+padding-top: 0.3rem;
+padding-bottom: 0.3rem;
+}
+.list-group-item.active{
+    cursor:pointer;
+}
+.list-group-item>.badge:hover{
+    background-color:red;
+}
+.card-category .list-group-item>.badge,
+.card-duration .list-group-item>.badge,
+.card-locations .list-group-item>.badge {
+float: right;
+}
+.card-category .list-group-item,
+.card-duration .list-group-item,
+.card-locations .list-group-item{
+    border: none;
+    text-transform: capitalize;
+}
+.card-duration .list-group-item a{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+#card-category{
+    text-transform: capitalize;
+}
+/*BAGDED*/
+.active .badge{
+    background: #fff;
+    color: #000;
+}
+.list-group-item:hover{
+    /*background: #eee;*/
+    cursor: pointer;
+}
+/*FILTRO*/
+.div-content-options-search .btn-filter-price{
+    border-color: #ddd;
+    cursor: pointer;
+}
+/*.faded{opacity:.5}*/

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" id="mapTab1" href="#home">Mapa 1</a></li>
+            <li><a data-toggle="tab" id="mapTab2" href="#menu1">Mapa 2</a></li>
+            <li><a data-toggle="tab" id="mapTab3" href="#menu2">Menu 3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Mapa 1</h3>
+                <p>Some content.</p>
+                <div id='map' style="height: 500px;width: 100%;">maps error</div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Mapa 2</h3>
+                <p>Some content in menu 1.</p>
+                <div id='map2' style="height: 500px;width: 100%;">maps error</div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Mapa 3</h3>
+                <p>Some content in menu 2.</p>
+                <div id='map3' style="height: 500px;width: 100%;">maps error</div>
+            </div>
+        </div>
+
+    </body>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkqZZvNYDZpUmH0mKFNm2vk2H80rkzsDU&callback=initMap&libraries=places">
+    </script>
+    <script src="googleMapas.js"></script>
+</html>
+
+<!--
+
+100: zona pequeña
+400: zona mediana
+1000: zona grande
+
+zoom: 
+1: zona grande
+5: zona medina
+10: zona pequeña
+
+zoom:tamanio
+10:0
+6:4
+
+-->

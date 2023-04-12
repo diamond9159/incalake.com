@@ -1,0 +1,127 @@
+header{
+/*z-index: 2;*/
+}
+.main-menu-btn {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-indent: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+  /* hamburger icon */
+  .main-menu-btn-icon, .main-menu-btn-icon:before, .main-menu-btn-icon:after {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    height: 2px;
+    width: 24px;
+    background: #bbb;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .main-menu-btn-icon:before {
+    content: '';
+    top: -7px;
+    left: 0;
+  }
+  .main-menu-btn-icon:after {
+    content: '';
+    top: 7px;
+    left: 0;
+  }
+  /* x icon */
+  #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
+    height: 0;
+    background: transparent;
+  }
+  #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* hide menu state checkbox (keep it visible to screen readers) */
+  #main-menu-state {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+  }
+  /* hide the menu in mobile view */
+  #main-menu-state:not(:checked) ~ #main-menu {
+    display: none;
+  }
+  #main-menu-state:checked ~ #main-menu {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+   nav.incalake-menu {
+    width: 100%;
+    min-height:49px;
+    z-index:100;
+    }
+   /*colocar a la derecha al menu*/
+    #main-menu{
+        display: inline-block;
+        float:right
+    }
+    /* hide the button in desktop view */
+    .main-menu-btn {
+      position: absolute;
+      top: -99999px;
+    }
+    /* always show the menu in desktop view */
+    #main-menu-state:not(:checked) ~ #main-menu {
+      display: block;
+    }
+  }
+    /*logo principal desktop*/
+    @media (max-width: 768px){
+      #logo_principal{ 
+        display:none;
+      }
+    }
+    #logo_principal{
+      width:120px;
+      margin:-25px 0 0 10px;
+      transition:width 0.5s;
+position: absolute;
+    }
+    /*fin logo */
+    nav.incalake-menu {
+    background: #1e6496;
+   }
+   nav.menu_fixed{
+    position: fixed;
+    top:0;
+    left:0;
+   }
+   nav.menu_fixed #logo_principal{
+    width: 70px;
+    margin-top:7px;
+   }
+@media (max-width: 768px){
+
+}
+
+@media (min-width:785px) and (max-width:1366px){
+.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
+    padding: 13px 6px;
+}
+.sm-blue a .fa{
+    display:none !important;
+}
+}

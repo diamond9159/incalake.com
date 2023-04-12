@@ -1,0 +1,27 @@
+
+body {
+    background-color: #f2f2f9 !important;
+}
+.title-h2 {
+    background: #006595;
+    border-bottom: 4px solid #1570a6;
+    border-radius: 8px;
+    color: #fbfbfb;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+h1 + .col-md-12{
+    padding:0 !important;
+}
+.breadcrumb{
+    background:#d9ecec;
+}
+.breadcrumb *{
+    font-size: 1em;
+    display: inline;
+}
+
+

@@ -1,0 +1,203 @@
+:root {
+    --color-primary: #187fbc;
+    --color-danger: #f85252;
+    --color-secondary: #229b22;
+    --color-text: rgba(0, 0, 0, 0.74);
+    /* --color-complement: rgba(204, 204, 204, 0.33); */
+    --color-complement: rgba(138, 136, 136, 0.33);
+    --color-background: rgba(238, 238, 238, 0.88);
+}
+p{
+	/*font-family: 'Montserrat', sans-serif;
+    font-weight: 300;*/
+    text-align: justify;
+    margin-top: 10px;
+}
+.div-content-why>div.col-md-12, .div-content-why>div.col-md-12>div.col-md-4 {
+padding: 0;
+}
+.div-title{
+	text-align: center;
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+
+.div-title .our{
+font-weight: 200;	
+}
+.div-title .why{
+	font-weight: 700;
+}
+.div-icon-why{
+	    /*font-size: 4em;*/
+    background: var(--color-primary);
+	text-align: center;
+    height: 80px;
+    width: 80px;
+    line-height: 80px !important;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    padding: 2%;
+    border: solid 1px;
+        
+
+}
+.div-icon-why:before{
+	    /*border: dotted;*/
+}
+/*EFECT*/
+.carousel-fade .carousel-inner .item {
+		  -webkit-transition-property: opacity;
+		  transition-property: opacity;
+		}
+		.carousel-fade .carousel-inner .item,
+		.carousel-fade .carousel-inner .active.left,
+		.carousel-fade .carousel-inner .active.right {
+		  opacity: 0;
+		}
+		.carousel-fade .carousel-inner .active,
+		.carousel-fade .carousel-inner .next.left,
+		.carousel-fade .carousel-inner .prev.right {
+		  opacity: 1;
+		}
+		.carousel-fade .carousel-inner .next,
+		.carousel-fade .carousel-inner .prev,
+		.carousel-fade .carousel-inner .active.left,
+		.carousel-fade .carousel-inner .active.right {
+		  left: 0;
+		  -webkit-transform: translate3d(0, 0, 0);
+		          transform: translate3d(0, 0, 0);
+		}
+		.carousel-fade .carousel-control {
+		  z-index: 2;
+		}
+/*configuraciones de las imagenes del carusel*/
+	.carousel img{
+		width: 100%;
+		display: block;
+	}
+	@media(min-width: 1000px){
+		.carousel img{
+			min-height: 400px;
+	    }
+	}
+	.carousel-control{
+		/*opacity: 0;*/
+	}
+	.carousel-control span{
+		background: var(--color-primary);
+		border-radius: 100%;
+		/*border:solid 1px rgb(112, 153, 199);*/
+	}
+	/*@media screen and (min-width: 768px){*/
+		.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+        width: auto;
+    height: auto;
+    padding: 2%;
+    /*top: 85%;*/
+	}
+	.carousel-indicators li {
+		border: 1px solid rgb(112, 153, 199);
+		background: #f5f5f5;
+	}
+	.carousel-indicators .active{
+		background: var(--color-primary);
+	}
+	/*}*/
+	.carousel-caption{
+		/*left: 0;*/
+		text-align: left;
+		/*bottom: 15%;*/
+		/*width: 30%;*/
+		right: 15%;
+		left: 15%;
+	}
+	.carousel-caption>span:last-child{
+	    border-left: solid 5px var(--color-primary);
+	text-align: center;
+	display: block;
+    padding: 1%;
+    background: rgba(51, 51, 51, 0.66);
+	}
+	.carousel-caption .title-product{
+		padding: 1%;
+		/*background: var(--color-primary);*/
+		background: rgba(24, 127, 188, 0.7);
+	}
+	.fondo{
+		position: absolute;
+		height: 100%;
+		width:100%;
+		background: rgba(0, 0, 0, 0.22);
+    	/*top: 0*/
+	}
+
+	 .btn-sucess{
+		/*display: inline-block;*/
+		background: #46a146;
+	}
+.div-why{
+		    /* position: absolute; */
+    top: 5%;
+    right: 15%;
+    background: #FF4B34;
+    /*padding: 0.8%;*/
+    padding: 8px;
+    color: #f5f5f5;
+    border-left: solid 5px #c43a28;
+    font-weight: 300;
+    display: inline-block;	
+	}
+.list-title-why{
+	top: 5%;
+    right: 15%;
+    background: var(--color-primary);
+    /*background: #9315A6;*/
+    /*padding: 0.8%;*/
+    padding: 8px;
+    color: #f5f5f5;
+    border-left: solid 5px #1a4c80;
+    /*border-left: solid 5px #6a1976;*/
+    font-weight: 300;
+    /*display: inline-block;	*/
+    display: block;
+}
+
+@media (max-width: 768px){
+	.carousel-caption{
+	    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-primary);
+	}
+	.carousel-caption>h2{
+	    margin: 0;
+	    font-size: 15px;
+	    padding: 1%;
+	}
+	.carousel-caption>h2 .title-product{
+	background: transparent;
+	    
+	}
+	.div-why{
+		display: block;
+	}
+
+	/*.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+    top: 50%;
+	}*/
+}
+
+
+div.carousel-title>hr{
+	/*
+	border-color: #1e6496;
+	
+	box-shadow: 0 1px 2px 1px #333;
+	*/
+}
+

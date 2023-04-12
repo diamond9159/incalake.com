@@ -1,0 +1,7 @@
+<div>
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>If you cancel at least 6&nbsp;day(s) in advance of the scheduled departure, there is 15% cancellation fee&nbsp;</strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>If you cancel between 5&nbsp;and 3 day(s) in advance of the scheduled departure, there is a 50% cancellation fee.</strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>If you cancel within 2 day(s) of the scheduled departure, there is a 100 percent cancellation fee.</strong></span></span></li>
+</ul>
+</div>

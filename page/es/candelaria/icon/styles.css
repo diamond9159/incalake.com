@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\61";
+}
+.icon-twitter:before {
+  content: "\62";
+}
+.icon-youtube:before {
+  content: "\63";
+}
+.icon-whatsapp:before {
+  content: "\64";
+}
+.icon-derecha1:before {
+  content: "\65";
+}
+.icon-izquierda1:before {
+  content: "\66";
+}
+.icon-youtube-play:before {
+  content: "\67";
+}
+.icon-checked:before {
+  content: "\68";
+}
+.icon-bus-terminal-two:before {
+  content: "\69";
+}
+.icon-bus:before {
+  content: "\6a";
+}
+.icon-agencia:before {
+  content: "\6b";
+}
+.icon-mapa:before {
+  content: "\6c";
+}
+.icon-cel:before {
+  content: "\6d";
+}
+.icon-jefe:before {
+  content: "\6e";
+}
+.icon-marca:before {
+  content: "\6f";
+}
+.icon-telefono:before {
+  content: "\70";
+}
+.icon-email:before {
+  content: "\71";
+}
+.icon-bien:before {
+  content: "\72";
+}
+.icon-ok:before {
+  content: "\73";
+}
+.icon-ok1:before {
+  content: "\74";
+}
+.icon-hot:before {
+  content: "\75";
+}
+.icon-hotel:before {
+  content: "\76";
+}
+.icon-pin:before {
+  content: "\77";
+}
+.icon-des:before {
+  content: "\78";
+}
+.icon-ser:before {
+  content: "\79";
+}
+.icon-map:before {
+  content: "\7a";
+}
+.icon-info:before {
+  content: "\41";
+}
+.icon-star:before {
+  content: "\43";
+}
+.icon-like:before {
+  content: "\42";
+}
+.icon-child:before {
+  content: "\44";
+}
+.icon-go:before {
+  content: "\45";
+}
+.icon-no:before {
+  content: "\46";
+}
+.icon-si:before {
+  content: "\47";
+}
+.icon-cuenta:before {
+  content: "\48";
+}
+.icon-mas:before {
+  content: "\49";
+}
+.icon-tren:before {
+  content: "\4a";
+}
+.icon-inf:before {
+  content: "\4b";
+}
+.icon-impo:before {
+  content: "\4c";
+}
+.icon-feliz:before {
+  content: "\4d";
+}
+.icon-car:before {
+  content: "\4e";
+}
+.icon-asterisk:before {
+  content: "\4f";
+}
+.icon-tris:before {
+  content: "\50";
+}
+.icon-menu:before {
+  content: "\51";
+}
+.icon-cerrar:before {
+  content: "\52";
+}
+.icon-por:before {
+  content: "\53";
+}
+.icon-calendar:before {
+  content: "\54";
+}
+.icon-descuenta:before {
+  content: "\55";
+}
+.icon-bus-1:before {
+  content: "\56";
+}
+.icon-h:before {
+  content: "\57";
+}
+.icon-wifi:before {
+  content: "\58";
+}
+.icon-bebida:before {
+  content: "\59";
+}
+.icon-cama:before {
+  content: "\5a";
+}
+.icon-portfolio:before {
+  content: "\30";
+}
+.icon-dolar:before {
+  content: "\31";
+}
+.icon-instagram:before {
+  content: "\32";
+}
+.icon-youtube-1:before {
+  content: "\33";
+}
+.icon-derecha:before {
+  content: "\34";
+}
+.icon-flag:before {
+  content: "\35";
+}
+.icon-plane:before {
+  content: "\36";
+}
+.icon-ship:before {
+  content: "\37";
+}
+.icon-down:before {
+  content: "\38";
+}
+.icon-clock:before {
+  content: "\39";
+}
+.icon-cup-2:before {
+  content: "\21";
+}
+.icon-cafe:before {
+  content: "\22";
+}
+.icon-micro:before {
+  content: "\23";
+}
+.icon-vaso:before {
+  content: "\24";
+}

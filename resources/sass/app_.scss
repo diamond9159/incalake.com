@@ -1,0 +1,167 @@
+//@import "~bootstrap/scss/bootstrap";
+@import "cart.css";
+
+.zabuto_calendar {
+	table {
+		width: 100%;
+		text-align: center;
+		th {
+			text-align: center;
+			font-weight: 500;
+			font-size: 14px;
+		}
+		tr td {
+			border: 1px solid #white !important;
+			div {
+				padding: 10px 13px;
+	            background: #f5f5f5;
+	            font-size: 13px;
+	            color: #ccc;
+			}
+			strong
+
+			{
+				font-weight: normal;
+				font-size: 14px;
+			}
+		}
+	}
+}
+.disabled-element
+{
+	pointer-events: none;
+    opacity: 0.3;
+}
+
+.btn-cart-add
+{
+	background: #fc6c4e;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    &:disabled
+	{
+		background: #ccc;	
+		cursor:not-allowed;
+	}
+}
+.cart-price
+{
+	border-top: 2px solid #c9ddef;
+	border-bottom: 2px solid #c9ddef;
+    padding-top: 10px;
+
+	
+}
+
+.duration-tour
+	{		
+		background: #d0ebff !important;
+	    width: 100%;
+	    display: block;
+	    margin-top: 10px;
+	    font-size: 14px;
+	    padding: 3px 10px;
+	    border-left: 5px solid #80a8e4;
+	    margin-bottom: 10px !important;
+	    bottom: 10px !important;
+	}
+	
+#modalEditarProducto
+{
+	.calendar-tour
+	{
+		width: 100% !important;
+		position: relative !important;
+		
+		input 
+		{
+			background: white;
+			padding: 8px 10px;
+			font-weight: normal;
+			border-radius: 1px;
+			font-size: 15px;
+		}
+	}
+
+	.fluid-person
+	{
+		width: 100%;
+	}
+	.total-tour
+	{
+		text-align: center;
+		.cost
+		{
+			line-height: 25px;
+			font-size: 40px;
+			display: block;
+		}
+	}
+	.btn-edit
+	{
+		button{
+			padding: 13px;
+			border-radius:1px;
+			font-weight: 500;
+		}
+	}
+}
+
+
+.fecha-tour
+{
+	border:2px solid #ccc;
+	padding:6px 8px;
+	background-color:white;
+	cursor:pointer;
+	border-radius: 4px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+
+	
+}
+
+.day-ability {
+    background: #ceead0 !important;
+    color: #111 !important;
+    cursor: pointer;
+	
+	&:hover {
+	    background: #69ac6c !important;
+	    color: white !important;
+	}
+}
+
+.day-oferta {
+	color: #af2a00;
+	position:absolute;font-weight:bold;top:0px;font-size:10px;right:3px;
+}
+
+.day-selected {
+    background: #69ac6c !important;
+    color: white !important;
+}
+.gift_selected {
+	background: #dcdcdc;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.recurso {
+	input {
+		text-align: center;
+		height: 27px;
+		width: 30px;
+	}
+	button {
+		background: #9799a2;
+		color: white;
+		border: none;
+		width: 25px;
+	}
+}

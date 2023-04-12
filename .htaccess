@@ -1,0 +1,136 @@
+
+RewriteOptions inherit
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  #AllowOverride All
+  #RewriteBase /
+  
+  #RewriteCond %{HTTPS} !=on
+  #RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# redirigir a la pagina principal sin el subdominio web.
+RewriteCond %{HTTP_HOST} ^web\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+  RedirectMatch 403 ^/(system).*$
+  RewriteCond $1 !^(index\.php|page|robots\.txt)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  RewriteRule ^(.*)$ index.php/$1 [L]
+
+  
+
+</IfModule>
+<IfModule mod_headers.c>
+	Header unset ETag
+        Header set Connection keep-alive
+        FileETag None
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault A1800
+ 
+<FilesMatch "\.(txt|xml|js)$">
+ExpiresDefault A2592000
+</FilesMatch>
+ 
+<FilesMatch "\.(css)$">
+ExpiresDefault A2592000
+</FilesMatch>
+ 
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|mp4|m4v|ogg|webm|aac)$">
+ExpiresDefault A2592000
+</FilesMatch>
+ 
+<FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$">
+ExpiresDefault A1700
+</FilesMatch>
+</IfModule>
+ 
+<IfModule mod_headers.c>
+  <FilesMatch "\.(txt|xml|js)$">
+   Header set Cache-Control "max-age=2592000"
+  </FilesMatch>
+ 
+  <FilesMatch "\.(css)$">
+   Header set Cache-Control "max-age=2592000"
+  </FilesMatch>
+ 
+  <FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|mp4|m4v|ogg|webm|aac)$">
+   Header set Cache-Control "max-age=2592000"
+  </FilesMatch>
+ 
+  <FilesMatch "\.(jpg|jpeg|png|gif|swf|webp)$">
+   Header set Cache-Control "max-age=2592000"
+  </FilesMatch>
+</IfModule>
+<FilesMatch "\.(css|js|ico|pdf|jpg|jpeg|png|gif|php|woff|ttf)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/jpg "access 1 month"
+ExpiresByType image/jpeg "access 1 month"
+ExpiresByType image/png "access 1 month"
+ExpiresByType image/ico "access plus 1 year"
+ExpiresByType image/icon "access plus 1 year"
+ExpiresByType image/x-ico "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType text/html "access 5 days"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType font/truetype "access plus 1 year"
+ExpiresByType font/opentype "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType application/x-font-woff2 "access plus 1 year"
+ExpiresByType application/x-font-opentype "access plus 1 year"
+ExpiresByType application/font-woff "access plus 1 year"
+ExpiresByType application/font-woff2 "access plus 1 year"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType text/x-cross-domain-policy "access plus 1 week"
+ExpiresDefault "access 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+<filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+Header set Cache-Control "max-age=2678400, public"
+</filesmatch>
+<filesmatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, private, must-revalidate"
+</filesmatch>
+<filesmatch "\.(pdf)$">
+Header set Cache-Control "max-age=86400, public"
+</filesmatch>
+<filesmatch "\.(js)$">
+Header set Cache-Control "max-age=2678400, private"
+</filesmatch>
+</IfModule>
+
+deny from 195.69.193.48
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Configure el paquete “ea-php71” como el lenguaje de programación predeterminado “PHP”.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

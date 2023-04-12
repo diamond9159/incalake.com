@@ -1,0 +1,49 @@
+:root {
+    --color-primary:#1a4c80;
+    --color-danger: #f85252;
+    --color-secondary: rgb(74, 180, 52);
+    --color-text: rgba(0, 0, 0, 0.74);
+    /*--color-complement: rgba(204, 204, 204, 0.33);*/
+    --color-complement: #f7f7f7;
+    
+}
+.header{
+  padding: 0 15px !important;
+}
+body{
+    /*font-family: 'Droid Sans' !important;*/
+    background-color: var(--color-complement) !important;
+    font-family: 'Quicksand' !important;
+
+}
+html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+  }
+  .content {
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    /*padding: 20px;*/
+  }
+  .footer {
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 0px !important;
+  }
+
+  .color-text-10{
+    color: white !important;
+  }
+
+  .btn{
+    cursor: pointer;
+  }
+.div-sky-tabs  a{color: #007bff;}
+.div-sky-tabs  a:hover{color: #0056b3 !important;}
+h1{
+    border-left: solid 3px #007bff;
+    padding-left: 5px !important;
+}

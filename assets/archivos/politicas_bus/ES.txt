@@ -1,0 +1,20 @@
+<table class="table table-bordered table-sm">
+	<tbody>
+		<tr>
+			<td><strong>Periodo de Anticipaci&oacute;n para la Cancelaci&oacute;n</strong></td>
+			<td><strong>Penalidades cambiados</strong></td>
+		</tr>
+		<tr>
+			<td><strong>Hasta 7 d&iacute;as antes del viaje</strong></td>
+			<td>Penalidad del 15% por gastos administrativos, de personal, impresi&oacute;n de ordenes de servicios y otros relacionados a la contrataci&oacute;n de los servicios requeridos</td>
+		</tr>
+		<tr>
+			<td><strong>Entre los 6 a 3 d&iacute;as antes del viaje</strong></td>
+			<td>Penalidad del 50% Se le cobrar&aacute; la mitad del monto total pactado de la reserva.</td>
+		</tr>
+		<tr>
+			<td><strong>2 d&iacute;as antes o el mismo d&iacute;a del viaje</strong></td>
+			<td>Penalidad del 100% Se le cobrar&aacute; el total del monto acordado del servicio.</td>
+		</tr>
+	</tbody>
+</table>

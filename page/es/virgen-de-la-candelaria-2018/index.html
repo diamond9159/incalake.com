@@ -1,0 +1,393 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Festividad de virgen de la candelaria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myCarousel img {
+    width: 100%;
+}
+.h2, h2 {
+    font-size: 15px !important;
+}
+.carousel-caption.derecha {
+    right: 10% !important;
+    left: 55% !important;
+    padding-bottom: 10% !important;
+    text-shadow: 0 0 0.2em #17a5e8, 0 0 0.2em #17a5e8, 0 0 0.2em #1121dc;
+}
+.carousel-caption.izquierda {
+    right: 55% !important;
+    left: 10% !important;
+    padding-bottom: 10% !important;
+    text-shadow: 0 0 0.2em #17a5e8, 0 0 0.2em #17a5e8, 0 0 0.2em #1121dc;
+}
+.row .col-md-4{
+        padding: 0;
+    }
+
+    
+    #contpaquetes > div > div:hover .precio{
+      color: #6ABB15;
+    }
+    #contpaquetes > div > div:hover .titulo{
+        background:rgba(8, 114, 204, 0.8);  
+    }
+    #contpaquetes > div > div .precio{
+       font-size: 40px;
+       color: #6EAC2D;
+       font-family: impact;
+    }
+    #contpaquetes > div > div .precio span{
+       font-size: 20px;
+       color: #AAA;
+       font-family: impact;
+    }
+    #contpaquetes > div > div .collapse-dia{
+    padding: 5px;
+    border-radius: 0 0 5px 0;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    overflow: hidden;
+    background:rgba(49, 112, 110,0.5);
+    }
+    #contpaquetes > div > div .titulo{
+    font-size: 15px;
+    background:rgba(8, 114, 204, 0.7);
+    }
+    #contpaquetes > div > div img{
+    border:1px solid #B3B3B3;
+        width: 100%;
+
+    }
+     #contpaquetes > div > div .bodytext{
+        border: 1px solid #ECF1FF;padding: 0;
+        border-top:none;
+        background:linear-gradient(#E0E3FB,#F0F2FF);
+     }
+    #contpaquetes  .fechaconfirmada{
+        color :#666E1F;
+        border-bottom: 1px solid #CCC;
+    } 
+   @media (max-width: 800px){
+      #contpaquetes > div > div{
+        margin-top: 8px;
+      }
+      .precio {
+        font-size: 30px !important;
+      }
+    } 
+</style>
+<script>
+        $().ready(function(){
+            $("header").load("header");$("footer").load("footer");
+            $('.titulo').each(function(el) {
+                $(this).css("margin-top","-"+$(this).height());
+            });
+    })
+
+</script>
+
+</head>
+<body>
+<header></header>
+<div id="contenedor" class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/candelaria-caporales.png" alt="Chania">
+      <div class="carousel-caption izquierda hidden-xs">
+        <h3>FESTIVIDAD VIRGEN DE LA CANDELARIA</h3>
+        <p>Te invitamos a ser parte de este tradicional evento que presenta a más de cinco mil músicos y unos cuarenta mil danzantes.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/candelaria-diablada.png" alt="Chania">
+      <div class="carousel-caption izquierda hidden-xs">
+        <h3>FESTIVIDAD VIRGEN DE LA CANDELARIA</h3>
+        <p>Te invitamos a ser parte de este tradicional evento que presenta a más de cinco mil músicos y unos cuarenta mil danzantes.</p>
+      </div>
+    </div>
+<div class="item">
+      <img src="img/candelaria-reyna.png" alt="Flower">
+      <div class="carousel-caption izquierda hidden-xs">
+        <h3>FESTIVIDAD VIRGEN DE LA CANDELARIA</h3>
+        <p>Te invitamos a ser parte de este tradicional evento que presenta a más de cinco mil músicos y unos cuarenta mil danzantes.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/candelaria-diablado.png" alt="Flower">
+      <div class="carousel-caption derecha hidden-xs">
+        <h3>FESTIVIDAD VIRGEN DE LA CANDELARIA</h3>
+        <p>Te invitamos a ser parte de este tradicional evento que presenta a más de cinco mil músicos y unos cuarenta mil danzantes.</p>
+      </div>
+    </div>
+
+<div class="item">
+      <img src="img/candelaria-sikuris.png" alt="Flower"> 
+      <div class="carousel-caption derecha hidden-xs">
+        <h3>FESTIVIDAD VIRGEN DE LA CANDELARIA</h3>
+        <p>Te invitamos a ser parte de este tradicional evento que presenta a más de cinco mil músicos y unos cuarenta mil danzantes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+<div id="paquetescandelaria" style="background:linear-gradient(#3588B9,#1570A6,#3588B9);border:1px solid #1570A6;text-transform: uppercase;font-size:1em;font-weight:bold;color:white;margin:10px 0 10px 0;text-align:center;padding:5px">Paquetes y tours candelaria 2018</div>
+<div class="row" id="contpaquetes">
+    <div class="col-md-12" style="padding: 0;">
+        <div class="col-md-4">
+            <a href="paquete-virgen-de-la-candelaria-2018-4d3n"><div class="col-md-12" target="_blank">
+                    <span class="collapse-dia btn-success">4D3N</span>
+                    <img  src="img/candelaria-tinkus.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>FESTIVIDAD VIRGEN DE LA CANDELARIA 4D/3N CON HOSTAL ***</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class="fechaconfirmada col-md-12">
+                                <!-- <b>Fecha Confirmada:</b> Sábado 10 febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 227 USD <span>P. P.</span></div>
+                        </div>
+                        <div class="col-md-12  container-fluid">
+                            *Cantidad requerida de 2 personas
+                        </div>
+                    </div>
+                </div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="paquete-virgen-de-la-candelaria-2018-4d3n#conhotel"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">4D3N</span>
+                    <img  src="img/candelaria-7- bondades.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>FESTIVIDAD VIRGEN DE LA CANDELARIA 4D/3N CON HOTEL ***</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="fechaconfirmada col-md-12">
+                                <!-- <b>Fecha Confirmada:</b> Sábado 10 Febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 340 USD <span>P. P.</span></div>
+                        </div>
+                        <div class="col-md-12  container-fluid">
+                        *Cantidad requerida de 2 personas                      
+                        </div>
+                    </div>
+                </div></a>
+        </div>
+        
+        <div class="col-md-4">
+            <a href="compra-de-asientos-candelaria-2018-para-la-parada-y-veneracion" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">1D</span>
+                    <img  src="img/venta-asientos-veneracioncandelaria.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>COMPRA DE ASIENTOS PARA LA PARADA DE LA CANDELARIA 2018</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="fechaconfirmada col-md-12">
+                               <!-- <b>Fecha Confirmada:</b> Lunes 12 de febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 29 USD <span>P. P.</span></div>
+                        </div>
+                        <div class="col-md-12  container-fluid">
+                        &nbsp;
+                        </div>
+                    </div>
+                </div></a>
+        </div>               
+    </div>
+    
+    <div class="col-md-12" style="padding:20px  0;"> 
+        <div class="col-md-4">
+            <a href="paquete-virgen-de-la-candelaria-2018-5d4n" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">5D4N</span>
+                    <img  src="img/candelaria-supay.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>FESTIVIDAD VIRGEN DE LA CANDELARIA 5D/4N CON HOSTAL ***</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class="fechaconfirmada col-md-12">
+                                <!-- <b>Fecha Confirmada:</b> Viernes 9 Febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 297 USD <span>P. P.</span></div>
+                        </div>
+                        <div class="col-md-12  container-fluid">
+                           *Cantidad requerida de 2 personas
+                        </div>
+                    </div>
+                </div></a>
+        </div>       
+        <div class="col-md-4">
+            <a href="paquete-virgen-de-la-candelaria-2018-5d4n#conhotel" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">5D4N</span>
+                    <img  src="img/candelaria-diabla.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>FESTIVIDAD VIRGEN DE LA CANDELARIA 5D/4N CON HOTEL ***</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class=" col-md-12 fechaconfirmada">
+                               <!-- <b> Fecha Confirmada:</b> Viernes 9 Febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 410 USD <span>P. P.</span></div>
+                        </div>
+                        <div class="col-md-12  container-fluid">
+                        *Cantidad requerida de 2 personas
+                        </div>
+                    </div>
+                </div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="paquetes-candelaria-2018-sin-hotel" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">2D1N</span>
+                    <img  src="img/candelaria-kullawada.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>PAQUETE CANDELARIA 2D1N SIN HOTEL</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class=" col-md-12 fechaconfirmada">
+                                <!-- <b>Fecha Confirmada:</b> Domingo 11 Febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 70 USD <span>P. P.</span></div>
+                        </div>
+                      
+                        <div class="col-md-12  container-fluid">
+                        &nbsp;
+                        </div>
+                    </div>
+                </div></a>
+        </div>
+        
+    </div>
+
+
+    <div class="col-md-12" > 
+        <div class="col-md-4">
+            <a href="paquetes-candelaria-2018-sin-hotel#paquete3d2n" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">3D2N</span>
+                    <img  src="img/candelaria-sikuris-joven.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>PAQUETE CANDELARIA 3D2N SIN HOTEL</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class=" col-md-12 fechaconfirmada">
+                                <!-- <b>Fecha Confirmada:</b> Domingo 11 Febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 75 USD <span>P. P.</span></div>
+                        </div>
+                      
+                        <div class="col-md-12  container-fluid">
+                        &nbsp;
+                        </div>
+                    </div>
+                </div></a>
+        </div>       
+        <div class="col-md-4">
+            <a href="paquetes-candelaria-2018-sin-hotel#paquete4d3n" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">4D3N</span>
+                    <img  src="img/candelaria-nino-cusillo.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>PAQUETE CANDELARIA 4D3N SIN HOTEL</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class=" col-md-12 fechaconfirmada">
+                                <!-- <b>Fecha Confirmada:</b> Sábado 10 Febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 90 USD <span>P. P.</span></div>
+                        </div>
+                   
+                        <div class="col-md-12  container-fluid">
+                        &nbsp;
+                        </div>
+                    </div>
+                </div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="paquetes-candelaria-2018-sin-hotel#paquete5d4n" target="_blank"><div class="col-md-12">
+                    <span class="collapse-dia btn-success">5D4N</span>
+                    <img  src="img/candelaria-nina-bailando.png" alt="">
+                </div>
+                <div class="col-md-12 " >
+                    <div class="container-fluid bodytext">
+                        <div class="btn-success titulo" style="text-align: center; text-transform:uppercase;">
+                        <b>PAQUETE CANDELARIA 5D4N SIN HOTEL</b>                    
+                        </div>
+                        <div class="col-md-12 text-center">
+                            
+                            <div class=" col-md-12 fechaconfirmada" >
+                                <!-- <b>Fecha Confirmada:</b> Viernes 9 de febrero 2018 -->
+                            </div>
+                            <div class="precio col-md-12">$ 95 USD <span>P. P.</span></div>
+                        </div>
+                        
+                        <div class="col-md-12  container-fluid">
+                        
+                        </div>
+                    </div>
+                </div></a>
+        </div>
+        
+    </div>
+    
+    </div>
+</div>
+<br><br>
+<footer></footer>
+
+
+</body>
+</html>
+

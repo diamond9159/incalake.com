@@ -1,0 +1,25 @@
+# Creamos hosting.com
+# .htaccess redireccionamiento del dominio principal a un subfolder
+# Haga los cambios de acuerdo con las siguientes instrucciones
+
+# No cambie esta línea.
+RewriteEngine on
+
+# Cambie sudominio.com por su dominio principal.
+RewriteCond %{HTTP_HOST} ^(www.)?web.incalake.com$ [NC]
+
+# Cambie 'subfolder' al nombre del folder donde va a redirigir su dominio principal.
+RewriteCond %{REQUEST_URI} !^/web/
+
+# No cambie estas líneas.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Cambie 'subfolder' al nombre del folder donde va a redirigir su dominio principal.
+RewriteRule ^(.*)$ /web/$1 [L]
+
+# Cambie sudominio.com por su dominio principal de nuevo.
+# Cambie 'subfolder' al nombre del folder donde va a redirigir su dominio principal.
+# Seguido del nombre del archivo principal del sitio como index.php, index.html, etc.
+RewriteCond %{HTTP_HOST} ^(www.)?web.incalake.com$ [NC]
+RewriteRule ^(/)?$ web/ [L]
