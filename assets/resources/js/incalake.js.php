@@ -1,32 +1,21 @@
-<?php header('Content-Type: application/javascript');?>
+<?php header('Content-Type: application/javascript'); ?>
 
 $(document).ready(function(){
-	<?php $detect = new Mobile_Detect; ?>
-	<?php if ($detect->isMobile()) {?>
-		
-	<?php}else{?>
-		$('header>nav').appendTo('.div-header-main');
-	<?php}?>
-			var nav = $('header>nav');
+<?php $detect = new Mobile_Detect; ?>
+<?php if ($detect->isMobile()) { ?>
 
-			var lastScrollTop = 0;
-			
-			$(window).scroll(function(event){
-			   var st = $(this).scrollTop();
+<?php } else { ?>
+    $('header>nav').appendTo('.div-header-main');
+<?php } ?>
+var nav = $('header>nav');
 
-					if (st > lastScrollTop || st < 109){
-				       // downscroll code
-				       // console.log("Scroll down");
-				       nav.removeClass("navbar-fixed-top").addClass('navbar-custom');
-				   } else {
-				      // upscroll code
-				      // console.log("Scroll up");
-				      nav.addClass("navbar-fixed-top").removeClass('navbar-custom');
-				   }
-				   lastScrollTop = st;
-			   // console.log(st);
-			   
-			});
+var lastScrollTop = 0;
 
-	$('.panel').find('.panel-title').append('<span class="fa fa-chevron-down" style="float:right;"></span>');
-});
+$(window).scroll(function(event){
+var st = $(this).scrollTop();
+
+if (st > lastScrollTop || st < 109){ // downscroll code // console.log("Scroll down");
+    nav.removeClass("navbar-fixed-top").addClass('navbar-custom'); } else { // upscroll code // console.log("Scroll
+    up"); nav.addClass("navbar-fixed-top").removeClass('navbar-custom'); } lastScrollTop=st; // console.log(st); });
+    $('.panel').find('.panel-title').append('<span class="fa fa-chevron-down" style="float:right;"></span>');
+    });
